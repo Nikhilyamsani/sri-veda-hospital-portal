@@ -97,6 +97,7 @@ body {
 }
 .error-message{
     display:block;
+    color:#d93025;
     margin-top:5px;
     font-size:13px;
 }

@@ -19,5 +19,5 @@ if (emailValue === "") {
 }
 
 if (passwordValue === "") {
-    passwordError.innerText = "Password is required.";
+    passwordError.innerText = "Password is required";
 }
