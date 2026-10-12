@@ -7,7 +7,17 @@ const password = document.getElementById("password");
 const emailError = document.getElementById("emailError");
 const passwordError = document.getElementById("passwordError");
 const loginMessage = document.getElementById("loginMessage");
+email.addEventListener("input", function () {
+    emailError.innerText = "";
+    email.classList.remove("input-error");
+    loginMessage.innerText = "";
+});
 
+password.addEventListener("input", function () {
+    passwordError.innerText = "";
+    password.classList.remove("input-error");
+    loginMessage.innerText = "";
+});
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 loginForm.addEventListener("submit", function (event) {
