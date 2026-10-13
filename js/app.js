@@ -1,6 +1,6 @@
 
 const loginForm = document.getElementById("loginForm");
-
+const togglePassword = document.getElementById("togglePassword");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 
@@ -62,5 +62,17 @@ loginForm.addEventListener("submit", function (event) {
         loginMessage.style.color = "green";
     } else {
         loginMessage.innerText = "";
+    }
+});
+// Show or hide password
+togglePassword.addEventListener("click", function () {
+    if (password.type === "password") {
+        password.type = "text";
+        togglePassword.innerText = "Hide";
+        togglePassword.setAttribute("aria-label", "Hide password");
+    } else {
+        password.type = "password";
+        togglePassword.innerText = "Show";
+        togglePassword.setAttribute("aria-label", "Show password");
     }
 });
