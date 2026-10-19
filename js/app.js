@@ -70,7 +70,7 @@ togglePassword.addEventListener("click", function () {
         password.type = "text";
         togglePassword.innerText = "Hide";
         togglePassword.setAttribute("aria-label", "Hide password");
-    } else {    
+    } else {      
         password.type = "password";
         togglePassword.innerText = "Show";
         togglePassword.setAttribute("aria-label", "Show password");
